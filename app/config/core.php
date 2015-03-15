@@ -8,11 +8,10 @@ if (DEVELOPMENT_ENVIRONMENT == true) {
     ini_set('display_errors', 'Off');
 }
 
+// Define the REPOSITORY_URL;
+define('REPOSITORY_URL','https://api.github.com/repos/');
+
 //Include the system files 
-
-
-
-
 include_once 'app/base/Service.class.php';
 include_once 'app/parser/IParser.php';
 include_once 'app/parser/JSONParser.class.php';

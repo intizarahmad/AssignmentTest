@@ -20,6 +20,13 @@ class Service{
     	return $parser->generateError($message);
     }
     
+    /**
+     * 
+     * @param ServiceHandler $service_handler
+     * @param type $parsed_array
+     * @param Parser $outputParser
+     * @return type
+     */
     public function service_response(ServiceHandler $service_handler,$parsed_array, Parser $outputParser){
         return $service_handler->response($this,$parsed_array, $outputParser);
     }
