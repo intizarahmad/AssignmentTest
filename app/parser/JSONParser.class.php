@@ -9,9 +9,9 @@ class JSONParser implements Parser {
      * function to get the the Result 
      */
     public function json2array($url){
-	
-		$ch = curl_init();
-	    curl_setopt($ch, CURLOPT_AUTOREFERER, TRUE);
+	//echo $url;
+	$ch = curl_init();
+	curl_setopt($ch, CURLOPT_AUTOREFERER, TRUE);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);  

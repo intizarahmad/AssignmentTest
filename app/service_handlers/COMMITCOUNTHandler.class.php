@@ -35,13 +35,13 @@ class COMMITCOUNTHandler implements ServiceHandler {
      */
     public function JSONOutputHandler(Service $obj, $response_array, Parser $outputParser){
         if(isset($response_array['message'])){
-                echo $response_array['message'];
+            echo $response_array['message'];
         }else{
             $totalCommitCount = 0;
             foreach($response_array as $data){
                 $totalCommitCount = $totalCommitCount+$data['total']; 
             }
-            $totalCommitCount;
+            echo 'Total Commits:' .$totalCommitCount;
         }	
     }
 }
